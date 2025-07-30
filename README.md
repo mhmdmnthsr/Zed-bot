@@ -47,7 +47,7 @@ python bot.py
 
 ```
 Zed-bot/
-├── zedchat.py
+├── bot.py
 ├── .env
 ├── .gitignore
 ├── README.md
