@@ -43,6 +43,15 @@ python bot.py
 ```
 
 ---
+##📁 Project Structure
+
+Zed-bot/
+├── zedchat.py
+├── .env.example
+├── .gitignore
+├── README.md
+└── requirements.txt
+---
 
 ## 🧪 Usage
 
