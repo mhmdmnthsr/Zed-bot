@@ -12,7 +12,8 @@ llm = ChatOpenAI()
 history = {}
 
 def get_session_id():
-    return 10000
+    username=input("Enter User Name : ")
+    return username
 
 def get_history(session_id):
     if session_id not in history:
@@ -27,8 +28,9 @@ conversation = RunnableWithMessageHistory(
 
 @click.command()
 def chat():
-    print("🤖 Zed: Hello! Ask me anything. Type 'exit' to quit. Type 'wipe' to wipe memory")
     session_id = get_session_id()
+    print("🤖 Zed: Hello ", session_id , "! Ask me anything. Type 'exit' to quit. Type 'wipe' to wipe memory")
+    
 
     while True:
         user_input = input("You: ").strip()
